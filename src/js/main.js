@@ -1,7 +1,7 @@
 
-import { initCatalog } from "./products";
-import {fetchData} from './api'
-import { getStoredData, steStoredData } from "./storage";
+import { initCatalog } from "./products.js";
+import {fetchData} from './api.js'
+import { getStoredData, steStoredData } from "./storage.js";
 
 // fetchData();
 // initCatalog(products);
