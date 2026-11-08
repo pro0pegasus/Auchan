@@ -1,6 +1,26 @@
 @import "tailwindcss";
 
-:root {
+
+:root{
+
+}
+
+.view-btn{
+  color: #6b7280;
+  background-color: transparent;
+}
+
+.view-btn:hover{
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.view-btn.is-active{
+  color: #ffffff;
+  background-color: #dc2626;
+}
+
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -295,4 +315,4 @@ code {
     right: 0;
     border-right-color: var(--border);
   }
-}
+} */

@@ -30,7 +30,7 @@ const containerClasses = viewCurr === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 
 const cardsHtml = items.map(elem => {
     const id = elem.id || elem.name_description;
     return `
-        <div class="product-card border rounded-lg border-gray-200 p-4 shadow-sm bg-white hover:shadow-md transition flex cursor-grab ${viewCurr === 'list' ? 'flex-row items-center gap-2' : 'flex-col justify-between'}" draggable = "true" data-id="${id}">
+        <article class="product-card border rounded-lg border-gray-200 p-4 shadow-sm bg-white hover:shadow-md transition flex cursor-grab ${viewCurr === 'list' ? 'flex-row items-center gap-2' : 'flex-col justify-between'}" draggable = "true" data-id="${id}">
             
             <img src=${elem.image} class="${viewCurr === 'list' ? 'w-24 h-24 object-contain' : 'w-full h-44 object-contain mb-3'} pointer-events-none"/>
             
@@ -52,9 +52,9 @@ const cardsHtml = items.map(elem => {
             </div>
                 <div class="flex items-center justify-between w-full pt-2 border-t border-gray-100">
                     <span class="price-display text-m font-bold text-gray-900">${elem.price} €</span>
-                    <button class="btn-add bg-red-600 hover:bg-red-700 text-white text-xs px-3 py-1.5 rounded transition" data-id="${id}">Ajouter</button>
+                    <button type="button" class="btn-add bg-red-600 hover:bg-red-700 text-white text-xs px-3 py-1.5 rounded transition cursor-pointer" data-id="${id}">Ajouter</button>
                 </div>
-        </div>
+        </article>
     `
 }).join('')
 
@@ -79,7 +79,7 @@ export function renderPagination(){
 
     let buttonHtml = `
         <div class="flex flex-wrap items-center justify-center gap-2">
-            <button id="prev-page" class="px-3 py-1 border rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed bg-gray-100' : 'bg-white hover:bg-gray-50'}" ${currentPage === 1 ? 'disabled': ''}>
+            <button id="prev-page" class="px-3 py-1 border border-gray-200 shadow-sm rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed bg-gray-100' : 'bg-white hover:bg-gray-50'}" ${currentPage === 1 ? 'disabled': ''}>
                 Precedent
             </buttom>
     `;
@@ -88,14 +88,14 @@ export function renderPagination(){
         const isActive = (i === currentPage);
 
         buttonHtml += `
-            <button class="page-num px-3 py-1 border rounded-lg text-sm ${isActive ? 'bg-red-600 text-white border-red-600' : 'bg-white hover:bg-gray-50'}" data-page="${i}">
+            <button class="page-num px-3 py-1 border rounded-lg border-gray-200 shadow-sm text-sm ${isActive ? 'bg-red-600 text-white border-red-600' : 'bg-white hover:bg-gray-50'}" data-page="${i}">
                 ${i}
             </button>
         `;
     }
 
     buttonHtml += `
-            <button id="next-page" class="px-3 py-1 border rounded text-sm ${currentPage === totalPages ? 'opacity-50 cursor-50 cursor-not-allowed bg-gray-100' : 'bg-white hover:bg-gray-50'}" ${currentPage === totalPages ? 'disabled' : ''}>
+            <button id="next-page" class="px-3 py-1 border rounded border-gray-200 shadow-sm text-sm ${currentPage === totalPages ? 'opacity-50 cursor-50 cursor-not-allowed bg-gray-100' : 'bg-white hover:bg-gray-50'}" ${currentPage === totalPages ? 'disabled' : ''}>
                 Suivant
             </button>
         </div>
