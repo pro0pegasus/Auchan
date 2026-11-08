@@ -35,7 +35,7 @@
         <div class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:px-6 min-[900px]:items-center min-[900px]:gap-6 lg:px-8">
 
           <a href="#" class="flex shrink-0 items-center gap-2 self-start min-[900px]:self-center">
-            AUCHAN'co
+            <img src="/src/assets/LogoAuchan1.png" class="h-20">
           </a>
 
           <div class="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row">
@@ -52,7 +52,7 @@
             </label>
           </div>
 
-          <div id="cart-drop-zone" class="flex w-full shrink-0 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto lg:min-w-52">
+          <div id="cart-drop-zone" class="flex w-full shrink-0 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto lg:min-w-52 cursor-pointer">
             <div class="flex items-center gap-2.5">
               <span class="flex h-9 w-9 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto lg:min-w-52">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -108,7 +108,7 @@
 
       </main>
 
-      <div id="cart-backdrop" class="fixed inset-0 z-40 hidden bg-gray-900"></div>
+      <div id="cart-backdrop" class="fixed inset-0 z-40 hidden bg-gray-900/50"></div>
       <section id="cart-dialog" class="fixed inset-y-0 right-0 z-50 flex w-full max-w-md translate-x-full flex-col border-l border-gray-200 bg-white shadow-2xl transition-transform duration-300">
         <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
           <div class="text-lg font-bold text-gray-900">
@@ -116,7 +116,7 @@
             <p class="text-xs text-gray-500"><span id="cart-dialog-count">0</span> article(s)</p>
           </div>
           <button id="close-cart" type="button" class="rounded-lg p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-900">
-                X
+            <i class="fa-solid fa-x"></i>
           </button>
         </div>
           <div id="cart-items" class="flex-1 space-y-3 overflow-y-auto p-5"></div>

@@ -1,8 +1,9 @@
 
-import { renderProducts, toggleTheView } from "./ui.js";
-import {initProduct, filtrerProducts, getCategories, setItemsperPage } from "./products.js"
+import { renderProducts, toggleTheView, renderCart, openCart, closeCart } from "./ui.js";
+import { initProduct, filtrerProducts, getCategories, setItemsperPage, calculatePrice } from "./products.js"
 import {fetchData} from './api.js'
 import { getStoredData, setStoredData } from "./storage.js";
+import { addToCart, changeCartQty, clearCart, removeFromCart } from './cart.js'
 
 // fetchData();
 // initCatalog(products);
@@ -17,6 +18,8 @@ function eventsListners(){
     const itemsSelectedPerPage = document.getElementById('items-per-page')
     const gridBtn = document.getElementById('v-grid');
     const listBtn = document.getElementById('v-list');
+    const productsContainer = document.getElementById('products');
+    const cartItemsContainer = document.getElementById('cart-items');
 
     const categories = getCategories();
     if(categorySelec){
@@ -29,7 +32,7 @@ function eventsListners(){
             }
         })
     }
-    
+
     categorySelec.addEventListener('change', (e)=>{
         filtrerProducts(e.target.value, inputFilter.value);
         renderProducts();
@@ -65,6 +68,104 @@ function eventsListners(){
             gridBtn.classList.remove('is-active');
             toggleTheView('list');
         });
+    }
+
+    if(productsContainer){
+        productsContainer.addEventListener('change', (e) =>{
+            if(!e.target.matches('size-select'))
+                return;
+
+            const card = e.target.closest('.product-cart');
+
+            let priceDisplay = null;
+
+            if(card){
+                priceDisplay = card.querySelector('price-display');
+            }
+
+            const basePrice = Number(e.target.dataset.basePrice);
+            const price = calculatePrice(basePrice, e.target.value); ///
+
+            if(priceDisplay){
+                priceDisplay.textContent = `${price.toFixed(2)} €`
+            }
+            
+        })
+    }
+
+    if(productsContainer){
+        productsContainer.addEventListener('click', (e) =>{
+            const addBtn = e.target.closest('.btn-add');
+
+            if(!addBtn)
+                return;
+
+            const card = addBtn.closest('.product-card');
+
+            let size = 'S';
+            if (card && card.querySelector('.size-select') && card.querySelector('.size-select').value) {
+                size = card.querySelector('.size-select').value;
+            }
+
+            if(addToCart(addBtn.dataset.id, size)){
+                renderCart()
+                addBtn.textContent = 'Ajouté';
+                // window.setTimeout(()=>{
+                //     addBtn.textContent = "Ajouter"
+                // }, 1000)
+            }
+            
+        })
+    }
+
+    //Handeling cart, opening and closing cart
+
+    const cartDropZone = document.getElementById('cart-drop-zone');
+    if(cartDropZone){
+        cartDropZone.addEventListener('click', openCart)
+    }
+
+    const closeBackDrop = document.getElementById('cart-backdrop');
+    if(closeBackDrop){
+        closeBackDrop.addEventListener('click', closeCart);
+    }
+
+    const closeCartBtn = document.getElementById('close-cart');
+    if(closeCartBtn){
+        closeCartBtn.addEventListener('click', closeCart);
+    }
+
+    const clearCartBtn = document.getElementById('clear-cart');
+    if(clearCartBtn){
+        clearCartBtn.addEventListener('click', ()=>{
+            clearCart();
+            renderCart()
+        });
+    }
+
+    // global escape key
+    document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape'){
+            closeCart();
+        }
+    })
+
+    // managing cart quantity and sup
+    if(cartItemsContainer){
+        cartItemsContainer.addEventListener('click', (e)=>{
+            const quantityBtn = e.target.closest('.cart-quantity-btn')
+            const removeBtn = e.target.closest('.cart-remove');
+
+            if(quantityBtn){
+                const change = quantityBtn.dataset.action === 'increase' ? 1 : - 1;
+                changeCartQty(quantityBtn.dataset.id, quantityBtn.dataset.size, change);
+                renderCart();
+            }
+            if(removeBtn){
+                removeFromCart(removeBtn.dataset.id, removeBtn.dataset.size)
+                renderCart();
+            }
+        })
     }
 
 }   

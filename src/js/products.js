@@ -8,11 +8,28 @@ let itemsperPage = 8;
 let activeCategory = 'all';
 let searchTerm = '';
 
+// export function initProduct(productArr){
+//     const products = productArr || getStoredData('products');
+//     allproducts = products.map((product, index) =>({
+//         ...product, id: index+1
+//     }))
+//     filtredProducts = [...allproducts];
+//     return allproducts;
+// }
+
 export function initProduct(productArr){
     allproducts = productArr || getStoredData('products');
     filtredProducts = [...allproducts];
 }
-// after: I need to separate the function to 2 function on filter by term and one by category
+//
+export function getAllProducts(){
+    return [...allproducts];
+}
+
+export function getProductId(productId){
+    return allproducts.find(product => product.id === Number(productId))
+}
+
 export function filtrerProducts(category, term){
     if(category !== undefined){
         activeCategory = category;
@@ -56,10 +73,20 @@ export function setPage(pageNumber){
     }
 }
 
-// export function calculateDynamicPrce(bestPrice, size){
-//     let price = Number(bestPrice);
-//     console.log(price);
-// }
+export function calculatePrice(bestPrice, size='S'){
+    const percentages = {
+        S:0,
+        M: 0.05,
+        L: 0.10,
+        XL: 0.20
+    }
+    const price = Number(bestPrice) || 0;
+    const rate = percentages[size] || 0;
+
+
+   return Math.round(price*(1+rate)*100) /100;
+
+}
 
 
 export function getPaginationData(){

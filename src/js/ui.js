@@ -1,4 +1,5 @@
 import {getPaginatedProducts, filtrerProducts, setPage, getPaginationData} from './products.js'
+import { getCartItems, getCartTotals } from './cart.js'
 
 const productsContainer = document.getElementById('products');
 const paginationContainer = document.getElementById('pagination');
@@ -41,8 +42,8 @@ const cardsHtml = items.map(elem => {
                 
             
                 <div class="flex items-center gap-2 my-2 text-xs">
-                    <label class="">Taile :</label>
-                    <selec class="size-select border border-gray-300 rounded px-1.5 py-0.5 data-base-price="${elem.price}">
+                    <label for="" class="">Taile:</label>
+                    <select id="" class="size-select border border-gray-300 rounded px-1.5 py-0.5 data-base-price="${elem.price}">
                         <option value="S">S</option>
                         <option value="M">M (+5%)</option>
                         <option value="L">L (+10%)</option>
@@ -133,3 +134,86 @@ export function toggleTheView(viewMode){
     renderProducts();
 }
 
+export function renderCart(){
+    const items = getCartItems();
+    const {itemCount, totalPrice} = getCartTotals();
+
+    const count = document.getElementById('cart-count');
+    const total = document.getElementById('cart-total');
+    const dialogCounter = document.getElementById('cart-dialog-count');
+    const dialogTotal = document.getElementById('cart-dialog-total');
+    const cartContainer = document.getElementById('cart-items');
+
+    if(count){
+        count.textContent = itemCount;
+    }
+    if(total){
+        total.textContent = `${totalPrice} €`;
+    }
+    if(dialogCounter){
+        dialogCounter.textContent = itemCount;
+    }
+     if(dialogTotal){
+        dialogTotal.textContent = totalPrice;
+    }
+    if(!cartContainer)
+        return
+
+    if(items.length ===0){
+        cartContainer.innerHTML = `<div class="flex h-full min-h-48 flex-col items-center justify-center text-center">Ajoutez un produit pour commencer.</div>`
+        return;
+    }
+
+    cartContainer.innerHTML = items.map(item => `
+            <article class="flex gap-3 rounded-xl border-gray-200 p-3">
+                <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-gray-50 p-2">
+                    <img class="h-full object-contain" src="${item.image}">
+                </div>
+                <div class="min-w-0 flex-1">
+                    <p class="text-[10px] font-bold uppercase tracking-wide text-red-600">${item.brand}</p>
+                    <h3 class="mt-0.5 line-clamp-2 text-xs font-semibold text-gray-900">${ item.name || item.name_description || ''}</h3>
+                    <p class="mt-1 text-xs text-gray-500">${item.size}</p>
+                    <div class="mt-2 flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm" data-action="decrease" data-id="${item.productId}" data-size="${item.size}">-</button>
+                            <span class="min-w-4 text-center text-xs font-semibold">${item.quantity}</span>
+                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm" data-action="increase" data-id="${item.productId}" data-size="${item.size}" >+</button>
+                        </div>
+                        <button type="button" class="cart-remove text-xs font-meduim text-red-600 hover:text-red-700" data-id="${item.productId}" data-size="${item.size}">Supprimer</button>
+                    </div>
+                </div>
+            </article>
+        `).join('');
+
+}
+
+export function openCart(){
+    const dialog = document.getElementById('cart-dialog');
+    const backdrop = document.getElementById('cart-backdrop');
+
+    if(!dialog || !backdrop)
+        return;
+
+    renderCart();
+    backdrop.classList.remove('hidden');
+    dialog.classList.remove('translate-x-full');
+    document.body.classList.add('overflow-hidden');
+
+    const closeCartBtn = document.getElementById('close-cart');
+    if (closeCartBtn) {
+        closeCartBtn.focus();
+    }
+}
+
+export function closeCart(){
+    const dialog = document.getElementById('cart-dialog');
+    const backdrop = document.getElementById('cart-backdrop');
+
+    if(!dialog || !backdrop)
+        return;
+
+    dialog.classList.add('translate-x-full');
+    backdrop.classList.add('hidden');
+    
+    document.body.classList.remove('overflow-hidden')
+}

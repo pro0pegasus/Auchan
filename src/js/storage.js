@@ -9,11 +9,11 @@ export function setStoredData(key, products){
 }
 
 export function saveCart(cartItems){
-
+    return setStoredData('cart', cartItems)
 }
 
 export function getCart(){
-
+    return getStoredData('cart');
 }
 
 export function saveProduct(productList){
