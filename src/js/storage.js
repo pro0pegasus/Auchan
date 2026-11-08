@@ -17,11 +17,11 @@ export function getCart(){
 }
 
 export function saveProduct(productList){
-
+    setStoredData('products', productList)
 }
 
 export function getProducts(){
-
+    return getStoredData('products')
 }
 
 // export {getStoredData, steStoredData}

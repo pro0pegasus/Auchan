@@ -154,7 +154,7 @@ export function renderCart(){
         dialogCounter.textContent = itemCount;
     }
      if(dialogTotal){
-        dialogTotal.textContent = totalPrice;
+        dialogTotal.textContent = `${totalPrice} €`;
     }
     if(!cartContainer)
         return
@@ -175,11 +175,11 @@ export function renderCart(){
                     <p class="mt-1 text-xs text-gray-500">${item.size}</p>
                     <div class="mt-2 flex items-center justify-between gap-2">
                         <div class="flex items-center gap-2">
-                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm" data-action="decrease" data-id="${item.productId}" data-size="${item.size}">-</button>
+                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm cursor-pointer" data-action="decrease" data-id="${item.productId}" data-size="${item.size}">-</button>
                             <span class="min-w-4 text-center text-xs font-semibold">${item.quantity}</span>
-                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm" data-action="increase" data-id="${item.productId}" data-size="${item.size}" >+</button>
+                            <button type="button" class="cart-quantity-btn h-7 w-7 rounded-md border-gray-200 text-sm cursor-pointer" data-action="increase" data-id="${item.productId}" data-size="${item.size}" >+</button>
                         </div>
-                        <button type="button" class="cart-remove text-xs font-meduim text-red-600 hover:text-red-700" data-id="${item.productId}" data-size="${item.size}">Supprimer</button>
+                        <button type="button" class="cart-remove text-xs font-meduim text-red-600 hover:text-red-700 cursor-pointer" data-id="${item.productId}" data-size="${item.size}">Supprimer</button>
                     </div>
                 </div>
             </article>
