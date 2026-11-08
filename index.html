@@ -4,14 +4,123 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auchen</title>
-    
-    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="icon" type="image/svg" href="/favicon.svg">
+    <script src="https://kit.fontawesome.com/e91b5e6bd8.js"></script>
+    <title>AUCHAN - Catalogue</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 
   </head>
-  <body>
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
 
-    <section id="products"></section>
+    <div class="flex flex-col">
+
+      <header class="sticky top-0 z-20 border-b border-gray-200 bg-white backdrop-blur">
+
+        <div class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:px-6 min-[900px]:flex-row min-[900]:items-center min-[900px]:gap-6 ">
+
+          <a href="#" class="flex shrink-0 items-center gap-2 self-start min-[900px]:self-center">
+            <img src="/src/assets/LogoAuchan1.png" class="h-25">
+          </a>
+
+          <div class="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row min-[900px]:items-center">
+            <label class="relative min-w-0 flex-1">
+              <input type="search" id="filter" placeholder="Rechercher un produit..." class="h-11 w-full border-gray-200 border rounded-lg bg-gray-50 pl-4 pr-4 text-sm outline-none transition placeholder:text-gray-400 focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10">
+            </label>
+
+            <label class="w-full sm:w-52 shrink-0">
+              <span class="sr-only">Filtrer par catégorie</span>
+              <select id="category-select" class="h-11 w-full border-gray-200 border rounded-lg bg-white px-3 text-sm text-gray-700 transition focus:border-red-500 focus:ring-4 focus:ring-red-500/10">
+                <option value="all">Toutes les marques</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="cart-drop-zone" class="flex w-full shrink-0 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto min-[900px]:min-52 cursor-pointer">
+            <div class="flex items-center gap-2.5">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-red-600">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+              <div>
+                <p class="text-xs text-gray-500 font-semibold text-gray-900">Mon panier</p>
+                <p class="text-xs text-gray-500"><span id="cart-count">0</span> article(s)</p>
+              </div>
+            </div>
+            <span id="cart-total" class="whitespace-nowrap text-sm font-bold text-red-600 bg-red-50 px-2.5 py-1.5 rounded-lg">0.00 €</span>
+          </div>
+          
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+        <section class="mb-6 flex flex-col gap-2 sm:mb-8">
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-red-600">Notre sélection</p>
+          <div class="flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
+            <div>
+              <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Le Catalogue produits</h1>
+              <p class="mt-1 text-sm text-gray-500">Trouvez vos produits préférés et préparz votre panier.</p>
+            </div>
+            <p id="products-count" class="text-sm text-gray-500"></p>
+          </div>
+        </section>
+
+
+        <section class="mb-5 flex flex-col gap-3 rounded-xl border border-gray-200 bg-white p-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
+          <div class=" flex items-center gap-1 text-sm text-gray-600">
+            <label for="items-per-page" class="whitespace-nowrap">Produits par page: </label>
+            <select id="items-per-page" class="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none">
+              <option value="4" >4</option>
+              <option value="8" selected>8</option>
+              <option value="12" >12</option>
+            </select>
+          </div>
+
+          <div class="flex items-center justify-between gap-3 sm:justify-end">
+            <Span class="text-sm text-gray-500">Affichage</Span>
+            <div class="flex rounded-lg border border-gray-200 p-1">
+              <button id="v-grid" type="button" class="view-btn is-active flex items-center gap1.5 rounded-md px-3 py-1.5 text-sm font-meduim transition">Grid</button>
+              <button id="v-list" type="button" class="view-btn flex items-center gap1.5 rounded-md px-3 py-1.5 text-sm font-meduim transition">Liste</button>
+            </div>   
+          </div>
+        </div>
+
+        </section>
+   
+
+        <section id="products"></section>
+        <nav id="pagination" class="my-8 flex justify-center"></nav>
+
+      </main>
+
+      <div id="cart-backdrop" class="fixed inset-0 z-40 hidden bg-gray-900/50"></div>
+      <section id="cart-dialog" class="fixed inset-y-0 right-0 z-50 flex w-full max-w-md translate-x-full flex-col border-l border-gray-200 bg-white shadow-2xl transition-transform duration-300">
+        <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
+          <div class="text-lg font-bold text-gray-900">
+            <h2 class="text-xs text-gray-500" id="cart-title">Mon panier</h2>
+            <p class="text-xs text-gray-500"><span id="cart-dialog-count">0</span> article(s)</p>
+          </div>
+          <button id="close-cart" type="button" class="rounded-lg p-2 text-gray-500 cursor-pointer transition hover:bg-gray-100 hover:text-gray-900">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+          <div id="cart-items" class="flex-1 space-y-3 overflow-y-auto p-5"></div>
+          <div class="border-t border-gray-200 bg-white p-5">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="text-sm font-meduim text-gray-600">Total de la commande</span>
+              <span id="cart-dialog-total" class="text-xl font-extrabold text-gray-900">0.00 €</span>
+            </div>
+            <buttton id="clear-cart" type="button" class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm font-semibold text-gray-600 cursor-pointer transition  hover:bg-gray-50">Vider le panier</buttton>
+          </div>
+      </section>
+      
+        
+      <footer class="border-t border-gray-200 bg-white py-5">
+        <p class="mx-auto max-w-7xl px-4 text-center text-xs text-gray-400 sm:px-6 lg:px-8">AUCHAN - Projet pédagogique e-commerece</p>
+      </footer>
+      
+
+      
+
+    </div>
 
     <script type="module" src="/src/js/main.js" defer></script>
   </body>
