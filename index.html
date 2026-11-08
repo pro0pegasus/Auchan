@@ -13,53 +13,36 @@
   <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
 
     <div class="flex flex-col">
-      <!-- <div class="flex flex-col min-h-screen"></div> -->
-
-      <!-- <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6 pb-4 border-b">
-        <h1 class="text-2xl font-bold text-red-600 tracking-wide">AUCHAN'Co</h1>
-
-        <div id="cart-drop-zone" class="border-2 border-dashed border-gray-300 rounded-lg p-3 bg-white flex items-center gap-3 transition-colors min-w-[260px] justify justify-between cursor-pointer hover:border-red-500">
-          <div class="flex items-center gap-2">
-            <span class="text-2xl">cart</span>
-            <div>
-              <p class="text-xs text-gray-500 font-semibold uppercase">Glissez ici</p>
-              <p class="text-xs font-bold text-gray-800"><span id="cart-count">0</span></p>
-            </div>
-          </div>
-          <span id="cart-total" class="text-sm font-bold text-red-600 bg-red-50 px-2.5 py-1 rounded">0.00 €</span>
-        </div>
-      </div> -->
 
       <header class="sticky top-0 z-20 border-b border-gray-200 bg-white backdrop-blur">
 
-        <div class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:px-6 min-[900px]:items-center min-[900px]:gap-6 lg:px-8">
+        <div class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:px-6 min-[900px]:flex-row min-[900]:items-center min-[900px]:gap-6 ">
 
           <a href="#" class="flex shrink-0 items-center gap-2 self-start min-[900px]:self-center">
-            <img src="/src/assets/LogoAuchan1.png" class="h-20">
+            <img src="/src/assets/LogoAuchan1.png" class="h-25">
           </a>
 
-          <div class="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row">
+          <div class="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row min-[900px]:items-center">
             <label class="relative min-w-0 flex-1">
-              <span class="">Rechercher un produit</span>
-              <input type="search" id="filter" placeholder="Rechercher un produit..." class="h-11 w-full border-gray-200 border rounded-lg bg-gray-50 pl-10 pr-4 text-sm outline-none transition placeholder:text-gray-400 focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500">
+              <input type="search" id="filter" placeholder="Rechercher un produit..." class="h-11 w-full border-gray-200 border rounded-lg bg-gray-50 pl-4 pr-4 text-sm outline-none transition placeholder:text-gray-400 focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10">
             </label>
 
-            <label class="sm:w-52">
+            <label class="w-full sm:w-52 shrink-0">
               <span class="sr-only">Filtrer par catégorie</span>
-              <select id="category-select" class="h-11 w-full border-gray-200 border rounded-lg bg-white px-3 text-sm text-gray-700 transition focus:border-red-500 focus:ring-4 focus:ring-red-500">
+              <select id="category-select" class="h-11 w-full border-gray-200 border rounded-lg bg-white px-3 text-sm text-gray-700 transition focus:border-red-500 focus:ring-4 focus:ring-red-500/10">
                 <option value="all">Toutes les marques</option>
               </select>
             </label>
           </div>
 
-          <div id="cart-drop-zone" class="flex w-full shrink-0 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto lg:min-w-52 cursor-pointer">
+          <div id="cart-drop-zone" class="flex w-full shrink-0 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto min-[900px]:min-52 cursor-pointer">
             <div class="flex items-center gap-2.5">
-              <span class="flex h-9 w-9 items-center justify-between gap-3 rounded-lg border border-dashed border-gray-300 bg-gray-50 px-3 py-2.5 transition hover:border-red-400 hover:bg-red-50 sm:w-auto lg:min-w-52">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-red-600">
                 <i class="fa-solid fa-cart-shopping"></i>
               </span>
               <div>
-                <p class="block text-xs text-gray-500 font-semibold text-gray-900">Mon panier</p>
-                <p class="block text-xs font-bold text-gray-500"><span id="cart-count">0</span> article(s)</p>
+                <p class="text-xs text-gray-500 font-semibold text-gray-900">Mon panier</p>
+                <p class="text-xs text-gray-500"><span id="cart-count">0</span> article(s)</p>
               </div>
             </div>
             <span id="cart-total" class="whitespace-nowrap text-sm font-bold text-red-600 bg-red-50 px-2.5 py-1.5 rounded-lg">0.00 €</span>
@@ -115,7 +98,7 @@
             <h2 class="text-xs text-gray-500" id="cart-title">Mon panier</h2>
             <p class="text-xs text-gray-500"><span id="cart-dialog-count">0</span> article(s)</p>
           </div>
-          <button id="close-cart" type="button" class="rounded-lg p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-900">
+          <button id="close-cart" type="button" class="rounded-lg p-2 text-gray-500 cursor-pointer transition hover:bg-gray-100 hover:text-gray-900">
             <i class="fa-solid fa-x"></i>
           </button>
         </div>
@@ -125,7 +108,7 @@
               <span class="text-sm font-meduim text-gray-600">Total de la commande</span>
               <span id="cart-dialog-total" class="text-xl font-extrabold text-gray-900">0.00 €</span>
             </div>
-            <buttton id="clear-cart" type="button" class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm font-semibold text-gray-600 transition hover:bg-gray-50">Vider le panier</buttton>
+            <buttton id="clear-cart" type="button" class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm font-semibold text-gray-600 cursor-pointer transition  hover:bg-gray-50">Vider le panier</buttton>
           </div>
       </section>
       
