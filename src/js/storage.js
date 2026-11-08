@@ -4,8 +4,24 @@ export function getStoredData(key){
 
 }
 
-export function steStoredData(key, products){
+export function setStoredData(key, products){
     localStorage.setItem(key, JSON.stringify(products));
+}
+
+export function saveCart(cartItems){
+
+}
+
+export function getCart(){
+
+}
+
+export function saveProduct(productList){
+
+}
+
+export function getProducts(){
+
 }
 
 // export {getStoredData, steStoredData}
