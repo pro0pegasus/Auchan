@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUCHAN — Contact</title><link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+<header class="sticky top-0 z-20 border-b border-gray-200 bg-white backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+<a href="#" class="flex shrink-0 items-center gap-2 self-start min-[900px]:self-center">
+            <img src="/src/assets/LogoAuchan1.png" class="h-25">
+          </a>        
+          <nav class="flex gap-4 text-sm font-medium"><a href="/" class="text-gray-600 hover:text-red-600">Catalogue</a>
+            <a href="/admin.html" class="text-gray-600 hover:text-red-600">Back-office</a>
+        </nav>
+    </div>
+</header>
+<main class="mx-auto grid max-w-7xl gap-8 px-4 py-10 lg:grid-cols-[1fr_1.2fr]">
+    <section>
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-600">Une question?</p>
+        <h1 class="my-3 text-3xl font-extrabold">Contactez-nous</h1>
+        <p class="max-w-md text-sm leading-6 text-gray-500">Notre équipe est disponible pour répondre à vos questions concernant vos commandes et nos produits.</p>
+        </div>
+    </section>
+
+    <section class="rounded-xl border bg-white p-6 shadow-sm">
+        <h2 class="mb-5 text-xl font-bold">Envoyer un message</h2>
+        <form id="contact-form">
+
+            <div>
+                 <label for="name" class="text-sm font-medium">Nom complet</label>
+                <input id="name" name="name" required class="mt-1 h-11 w-full rounded-lg border border-gray-300 px-3">
+                <p class="field-error mt-1 text-xs text-red-600" data-error="name"></p>
+            </div>
+
+            <div>
+                <label for="email" class="text-sm font-medium">Adresse e-mail</label>
+                <input id="email" name="email" required class="mt-1 h-11 w-full rounded-lg border border-gray-300 px-3">
+                <p class="field-error mt-1 text-xs text-red-600" data-error="email"></p>
+            </div>
+
+            <div>
+                <label for="phone" class="text-sm font-medium">Tel</label>
+                <input id="phone" name="phone" type="tel" placeholder="0612...." required class="mt-1 h-11 w-full rounded-lg border border-gray-300 px-3">
+                <p class="field-error mt-1 text-xs text-red-600" data-error="phone"></p>
+            </div>
+
+            <div>
+                <label for="subject" class="text-sm font-medium">Sujet</label>
+                <input id="subject" name="subject" required class="mt-1 h-11 w-full rounded-lg border border-gray-300 px-3">
+                <p class="field-error mt-1 text-xs text-red-600" data-error="subject"></p>
+            </div>
+
+            <div>
+                <label for="message" class="text-sm font-medium">Message</label>
+                <textarea id="message" name="message" row="5" required class="mt-1 h-11 w-full rounded-lg border border-gray-300 px-3"></textarea>
+                <p class="field-error mt-1 text-xs text-red-600" data-error="message"></p>
+            </div>
+
+            <button id="send-message" type="submit" class="w-full rpunded-lg bg-red-600 px-5 py-3 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-60">Envoyer le message</button>
+        </form>
+    </section>
+</main>
+<script type="module" src="/src/js/contact.js"></script>
+</body>
+</html>

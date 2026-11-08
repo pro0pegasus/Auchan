@@ -5,4 +5,7 @@ export function fetchData(){
         .then(res => res.json())
 }
 
-
+export function fetchFakeData(){
+    return fetch('https://randomuser.me/api/') 
+        .then(res => res.json())
+}
