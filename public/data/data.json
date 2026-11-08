@@ -10,7 +10,8 @@
     "image": "https://cdn.auchan.fr/media/A0219900101000063585PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081708_0x0/B2CD/",
-    "category": "pates"
+    "category": "pates",
+    "id": "AUC-0001"
   },
   {
     "name_description": "BARILLA\n    Sauce bolognaise en bocal",
@@ -23,7 +24,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000041H6VPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "https://cdn.auchan.fr/media/PICTOSTEP122680332_0x0/B2CD/",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081708_0x0/B2CD/",
-    "category": "Sauces"
+    "category": "Sauces",
+    "id": "AUC-0002"
   },
   {
     "name_description": "BARILLA\n    Sauce pesto alla genovese au basilic frais et parmesan en bocal",
@@ -36,7 +38,8 @@
     "image": "https://cdn.auchan.fr/media/A0219980324000513294PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "https://cdn.auchan.fr/media/PICTOSTEP122680332_0x0/B2CD/",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081710_0x0/B2CD/",
-    "category": "Sauces"
+    "category": "Sauces",
+    "id": "AUC-0003"
   },
   {
     "name_description": "LIPTON ICE TEA\n    Thé glacé saveur pêche",
@@ -49,7 +52,8 @@
     "image": "https://cdn.auchan.fr/media/S010000000401OQPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081705_0x0/B2CD/",
-    "category": "Boissons"
+    "category": "Boissons",
+    "id": "AUC-0004"
   },
   {
     "name_description": "LIPTON ICE TEA\n    Thé glacé sans sucres saveur pêche",
@@ -62,7 +66,8 @@
     "image": "https://cdn.auchan.fr/media/S0100000004019DPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081705_0x0/B2CD/",
-    "category": "Boissons"
+    "category": "Boissons",
+    "id": "AUC-0005"
   },
   {
     "name_description": "LIPTON ICE TEA\n    Thé glacé saveur pêche",
@@ -75,7 +80,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000040NPKPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081710_0x0/B2CD/",
-    "category": "Boissons"
+    "category": "Boissons",
+    "id": "AUC-0006"
   },
   {
     "name_description": "LIPTON ICE TEA\n    Thé glacé saveur pêche",
@@ -88,7 +94,8 @@
     "image": "https://cdn.auchan.fr/media/S010000000401RCPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081705_0x0/B2CD/",
-    "category": "Boissons"
+    "category": "Boissons",
+    "id": "AUC-0007"
   },
   {
     "name_description": "PAMPERS\n    Baby Dry couches taille 4+ (10-15kg)",
@@ -101,7 +108,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000041SVKPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "bebe"
+    "category": "bebe",
+    "id": "AUC-0008"
   },
   {
     "name_description": "PAMPERS\n    Baby Dry couches taille 4 (9-14kg)",
@@ -114,7 +122,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000041SUSPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "bebe"
+    "category": "bebe",
+    "id": "AUC-0009"
   },
   {
     "name_description": "PAMPERS\n    Baby dry couches-culottes taille 6 (13-19kg)",
@@ -127,7 +136,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000041SVGPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "bebe"
+    "category": "bebe",
+    "id": "AUC-0010"
   },
   {
     "name_description": "FLEURS\n    Pomponettes multicolores",
@@ -140,7 +150,8 @@
     "image": "https://cdn.auchan.fr/media/A0219951012000026478PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Fleurs"
+    "category": "Fleurs",
+    "id": "AUC-0011"
   },
   {
     "name_description": "FLEURS\n    Pomponettes différents coloris disponible en point de vente",
@@ -153,7 +164,8 @@
     "image": "https://cdn.auchan.fr/media/A0219941007000016519PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Fleurs"
+    "category": "Fleurs",
+    "id": "AUC-0012"
   },
   {
     "name_description": "1664\n    Bière blonde 5,5% boîte",
@@ -166,7 +178,8 @@
     "image": "https://cdn.auchan.fr/media/A0219960718000059696PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081708_0x0/B2CD/",
-    "category": "Bières"
+    "category": "Bières",
+    "id": "AUC-0013"
   },
   {
     "name_description": "1664\n    Bière blonde 5.5% pack bouteilles",
@@ -179,7 +192,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000040LQPPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081710_0x0/B2CD/",
-    "category": "Bières"
+    "category": "Bières",
+    "id": "AUC-0014"
   },
   {
     "name_description": "1664\n    Bière blonde 5,5% pack bouteilles",
@@ -192,7 +206,8 @@
     "image": "https://cdn.auchan.fr/media/P02000000000G1VPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081710_0x0/B2CD/",
-    "category": "Bières"
+    "category": "Bières",
+    "id": "AUC-0015"
   },
   {
     "name_description": "LUSTUCRU\n    Gnocchi à poêler nature format Maxi",
@@ -205,7 +220,8 @@
     "image": "https://cdn.auchan.fr/media/S010000000404PJPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP122680321_0x0/B2CD/",
-    "category": "Pâtes et féculents"
+    "category": "Pâtes et féculents",
+    "id": "AUC-0016"
   },
   {
     "name_description": "LUSTUCRU\n    Gnocchi à poêler nature",
@@ -218,7 +234,8 @@
     "image": "https://cdn.auchan.fr/media/S010000000404PIPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP122680321_0x0/B2CD/",
-    "category": "Pâtes et féculents"
+    "category": "Pâtes et féculents",
+    "id": "AUC-0017"
   },
   {
     "name_description": "X-TRA\n    Express Lessive liquide efficacité",
@@ -231,7 +248,8 @@
     "image": "https://cdn.auchan.fr/media/S010000000420Y0PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Entretien et lessive"
+    "category": "Entretien et lessive",
+    "id": "AUC-0018"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé enrichi en vitamine D UHT",
@@ -244,7 +262,8 @@
     "image": "https://cdn.auchan.fr/media/A0220071010000028381PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0019"
   },
   {
     "name_description": "COCA-COLA\n    Boisson gazeuse aux extraits végétaux sans sucres",
@@ -257,7 +276,8 @@
     "image": "https://cdn.auchan.fr/media/A0220180529000502432PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081705_0x0/B2CD/",
-    "category": "Boissons sans alcool"
+    "category": "Boissons sans alcool",
+    "id": "AUC-0020"
   },
   {
     "name_description": "CHARLES VOLNER\n    Vin mousseux blanc de blancs brut",
@@ -270,7 +290,8 @@
     "image": "https://cdn.auchan.fr/media/A0220040325000515071PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Vins et effervescents"
+    "category": "Vins et effervescents",
+    "id": "AUC-0021"
   },
   {
     "name_description": "SOBIESKI\n    Vodka polonaise 37,5%",
@@ -283,7 +304,8 @@
     "image": "https://cdn.auchan.fr/media/A0220101025000452244PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Spiritueux"
+    "category": "Spiritueux",
+    "id": "AUC-0022"
   },
   {
     "name_description": "BALLANTINES\n    Scotch whisky écossais blended malt 40%",
@@ -296,7 +318,8 @@
     "image": "https://cdn.auchan.fr/media/A0219900525000051688PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP124081705_0x0/B2CD/",
-    "category": "Spiritueux"
+    "category": "Spiritueux",
+    "id": "AUC-0023"
   },
   {
     "name_description": "HAVANA CLUB\n    Rhum ambré Anejo Especial cubain 37,5%",
@@ -309,7 +332,8 @@
     "image": "https://cdn.auchan.fr/media/P020000000010ITPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Spiritueux"
+    "category": "Spiritueux",
+    "id": "AUC-0024"
   },
   {
     "name_description": "BAILEY'S\n    Irish cream original 17%",
@@ -322,7 +346,8 @@
     "image": "https://cdn.auchan.fr/media/A0219900101000050690PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Spiritueux"
+    "category": "Spiritueux",
+    "id": "AUC-0025"
   },
   {
     "name_description": "Avocat affiné",
@@ -335,7 +360,8 @@
     "image": "https://cdn.auchan.fr/media/A0219870327000035144PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "",
-    "category": "Fruits et légumes"
+    "category": "Fruits et légumes",
+    "id": "AUC-0026"
   },
   {
     "name_description": "AUCHAN LE POISSONNIER\n    Filets de merlu blanc façon fish & chips",
@@ -348,7 +374,8 @@
     "image": "https://cdn.auchan.fr/media/S01000000040MGMPRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP122680321_0x0/B2CD/",
-    "category": "Poissons et fruits de mer"
+    "category": "Poissons et fruits de mer",
+    "id": "AUC-0027"
   },
   {
     "name_description": "AUCHAN LE POISSONNIER\n    Filet de limande meunière",
@@ -361,7 +388,8 @@
     "image": "https://cdn.auchan.fr/media/A0220080326000645361PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP122680321_0x0/B2CD/",
-    "category": "Poissons et fruits de mer"
+    "category": "Poissons et fruits de mer",
+    "id": "AUC-0028"
   },
   {
     "name_description": "MAISON BRIAU\n    Empanadas au thon",
@@ -374,7 +402,8 @@
     "image": "https://cdn.auchan.fr/media/A0220220613000543113PRIMARY_0x0/B2CD/?width=2048&height=2048&fit=pad&format=rw&quality=75",
     "image2": "",
     "image3": "https://cdn.auchan.fr/media/PICTOSTEP122680321_0x0/B2CD/",
-    "category": "Plats préparés et traiteur"
+    "category": "Plats préparés et traiteur",
+    "id": "AUC-0029"
   },
   {
     "name_description": "AUCHAN LE POISSONNIER\n    Queue de crevettes",
@@ -387,7 +416,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Poissons et fruits de mer"
+    "category": "Poissons et fruits de mer",
+    "id": "AUC-0030"
   },
   {
     "name_description": "COCORETTE\n    Oeufs de poules élevées en plein air",
@@ -400,7 +430,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "oeufs"
+    "category": "oeufs",
+    "id": "AUC-0031"
   },
   {
     "name_description": "TOUT FRAIS TOUT FRANCAIS\n    Oeufs de poules élevées au sol datés du jour de ponte",
@@ -413,7 +444,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "oeufs"
+    "category": "oeufs",
+    "id": "AUC-0032"
   },
   {
     "name_description": "LACTEL\n    Vita'Vie Lait 12 vitamines",
@@ -426,7 +458,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0033"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé UHT",
@@ -439,7 +472,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0034"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé UHT",
@@ -452,7 +486,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0035"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé bio UHT",
@@ -465,7 +500,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0036"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé vitamine D",
@@ -478,7 +514,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0037"
   },
   {
     "name_description": "LACTEL\n    Lait demi-écrémé avec vitamine D",
@@ -491,7 +528,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0038"
   },
   {
     "name_description": "FAIRE FRANCE\n    Lait demi-écrémé équitable UHT",
@@ -504,7 +542,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0039"
   },
   {
     "name_description": "CANDIA\n    Grandlait Lait frais demi-écrémé de montagne",
@@ -517,7 +556,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0040"
   },
   {
     "name_description": "CANDIA\n    Viva Lait vitaminé UHT",
@@ -530,7 +570,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0041"
   },
   {
     "name_description": "CANDIA\n    Viva Lait vitaminé UHT",
@@ -543,7 +584,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0042"
   },
   {
     "name_description": "CANDIA\n    Grandlait Lait demi-écrémé UHT bio",
@@ -556,7 +598,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0043"
   },
   {
     "name_description": "AUCHAN\n    Lait facile à digérer sans lactose",
@@ -569,7 +612,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0044"
   },
   {
     "name_description": "AUCHAN\n    Lait riche en protéines",
@@ -582,7 +626,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0045"
   },
   {
     "name_description": "LACTEL\n    Lait écrémé vitamine D 0%MG",
@@ -595,7 +640,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0046"
   },
   {
     "name_description": "AUCHAN SOLIDAIRES BIO\n    CULTIVONS LE BON Lait écrémé UHT",
@@ -608,7 +654,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0047"
   },
   {
     "name_description": "LACTEL\n    Lait entier enrichi en vitamine D UHT",
@@ -621,7 +668,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0048"
   },
   {
     "name_description": "CANDIA\n    Grandlait Lait frais entier de montagne",
@@ -634,7 +682,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0049"
   },
   {
     "name_description": "LACTEL\n    Matin léger Lait bio facile à digérer sans lactose",
@@ -647,7 +696,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Produits laitiers"
+    "category": "Produits laitiers",
+    "id": "AUC-0050"
   },
   {
     "name_description": "CANDY'UP\n    Boisson lactée à la vanille",
@@ -660,7 +710,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons lactées"
+    "category": "Boissons lactées",
+    "id": "AUC-0051"
   },
   {
     "name_description": "AUCHAN BIO\n    Boisson lait d'amande légère sans sucres ajoutés bio",
@@ -673,7 +724,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0052"
   },
   {
     "name_description": "AUCHAN BIO\n    Boisson lait d'amande goût intense bio",
@@ -686,7 +738,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0053"
   },
   {
     "name_description": "AUCHAN BIO\n    Boisson riz amande",
@@ -699,7 +752,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "https://www.auchan.fr/static/images/pixel.png",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0054"
   },
   {
     "name_description": "ALPRO\n    Boisson végétale à l'amande grillée de Méditerranée",
@@ -712,7 +766,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0055"
   },
   {
     "name_description": "ALPRO\n    Boisson végétale à l'amande grillée sans sucres",
@@ -725,7 +780,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0056"
   },
   {
     "name_description": "ALPRO\n    Boisson végétale au lait d'amande goût vanille",
@@ -738,7 +794,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0057"
   },
   {
     "name_description": "ALPRO\n    Boisson végétale à l'amande blanche sans sucres",
@@ -751,7 +808,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0058"
   },
   {
     "name_description": "ALPRO\n    Boisson végétale spécial café goût amande",
@@ -764,7 +822,8 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0059"
   },
   {
     "name_description": "BJORG\n    Boisson végétale à l'avoine 25g de fibres bio",
@@ -777,6 +836,7 @@
     "image": "https://www.auchan.fr/static/images/pixel.png",
     "image2": "",
     "image3": "https://www.auchan.fr/static/images/pixel.png",
-    "category": "Boissons végétales"
+    "category": "Boissons végétales",
+    "id": "AUC-0060"
   }
 ]
